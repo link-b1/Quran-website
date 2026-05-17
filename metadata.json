@@ -1,0 +1,8 @@
+{
+  "name": "القرآن الکریم - اردو",
+  "description": "قرآن پاک کی تلاوت اور اردو ترجمہ کے ساتھ ایک خوبصورت ویب سائٹ",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

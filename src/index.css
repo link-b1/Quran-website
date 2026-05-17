@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Noto+Sans+Arabic:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Arial", ui-sans-serif, system-ui, sans-serif;
+  --font-urdu: "Noto Nastaliq Urdu", serif;
+  --font-arabic: "Noto Sans Arabic", sans-serif;
+
+  --color-quran-green: #00843D;
+  --color-quran-green-dark: #005A2B;
+  --color-quran-green-light: #F0F9F1;
+  --color-quran-gold: #C5A059;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  color: #1a1a1a;
+  @apply bg-white selection:bg-quran-green/20 selection:text-quran-green-dark;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[dir="rtl"] {
+  text-align: right;
+}
+
+.urdu-text {
+  font-family: var(--font-urdu), serif;
+  line-height: 2.4;
+}
+
+.arabic-text {
+  font-family: var(--font-arabic), sans-serif;
+  line-height: 2.2;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e2e8f0;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cbd5e1;
+}
+
+.glass-morphism {
+  @apply bg-white/70 backdrop-blur-md border border-white/20;
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(0, 132, 61, 0.2);
+}
