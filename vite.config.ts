@@ -25,7 +25,10 @@ export default defineConfig(({mode}) => {
   };
 });
 
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
 export default defineConfig({
-  base: '/Quran-website/', // Q capital hai, spelling same rakho
   plugins: [react()],
+  base: '/Quran-website/',
 })
