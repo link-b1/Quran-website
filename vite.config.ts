@@ -24,3 +24,4 @@ export default defineConfig(({mode}) => {
     },
   };
 });
+fix: add base path for github pages
