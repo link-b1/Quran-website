@@ -24,4 +24,8 @@ export default defineConfig(({mode}) => {
     },
   };
 });
-fix: add base path for github pages
+
+export default defineConfig({
+  base: '/Quran-website/', // Q capital hai, spelling same rakho
+  plugins: [react()],
+})
